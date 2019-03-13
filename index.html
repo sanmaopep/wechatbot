@@ -3,19 +3,39 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Electron boilerplate</title>
+	<title>极简微信机器人</title>
 	<link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-	<div class="container">
-		<header>
-			<h1>Electron boilerplate</h1>
-		</header>
-		<section class="main"></section>
-		<canvas id="qrcode" />
-		<footer></footer>
-	</div>
+	<header>
+		极简微信机器人
+	</header>
+	<section id="Encryption">
+		<input id="encryption_code" placeholder="请输入激活码" />
+		<button id="encryption_confirm">确认</button>
+		<p id="encryption_message"></p>
+	</section>
+	<section id="Main">
+		<section id="QrcodeSection">
+			<h3>登录二维码</h3>
+			<canvas id="qrcode"></canvas>
+		</section>
+		<section id="Form">
+			<input placeholder="请输入关键词" />
+			<input type="checkbox" />
+			<label>是否监听来自微信群的消息</label>
+		</section>
+		<section id="Log">
+		</section>
+	</section>
+
+
+	<footer></footer>
+	<script>
+		require('./lib/main.js')()
+
+	</script>
 </body>
 
 </html>
