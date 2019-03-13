@@ -26,3 +26,7 @@ Builds the app for macOS, Linux, and Windows, using [electron-packager](https://
 
 测试密钥：
 {"iv":"nWFouQZLDvKoCFI5JlVvtQ==","v":1,"iter":10000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"Vd/t8ysC2iI=","ct":"Pk/i6hCTPc87g3+OGHGXubRh1569LOsbeDpsne/Nh2y8IDTjvESuwS67NHn7+EafZfUpZDwdxD2VEpqSR/28CeeDZdvliq3mamWrhYPA"}
+
+注意：
+
+用npm install打包不要用cnpm install
